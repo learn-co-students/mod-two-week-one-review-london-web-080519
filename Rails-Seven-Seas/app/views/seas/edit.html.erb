@@ -26,3 +26,8 @@
   <%=  f.submit %>
 
   <% end %>
+
+
+<%= form_tag @sea, method: "delete" do %>
+  <%= submit_tag "Delete #{@sea.name}" %>
+<% end %>
